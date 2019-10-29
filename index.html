@@ -38,6 +38,17 @@
 			padding-top: 21px; 
 		}
 	</style>
+	<script type="text/javascript">
+		function browser(){
+			let web=navigator.userAgent;
+			let isAndroid = web.indexOf('Android') > -1 || web.indexOf('Adr') > -1;
+			let isiOS = !!web.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+			if(isAndroid)
+				{alert('还没有安卓版呢~喵！')}
+			else{
+			window.location.href="http://www.apple.com/"};
+		}
+	</script>
 </head>
 <body>
 	<div class="content">
@@ -46,10 +57,9 @@
 			<img src="./images/appslogan.png">
 		</div>
 	</div>
-	<a href="http://www.apple.com/">
-		<div class="footer">
-			<img src="./images/download.png">
-		</div>
-	</a>
+
+	<div class="footer" type=button onclick=browser()>
+		<img src="./images/download.png">
+	</div>
 </body>
 </html>
